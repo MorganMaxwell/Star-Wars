@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <title>Star Wars - Express</title>
-  <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
@@ -63,7 +62,6 @@
   </div>
 
   <script type="text/javascript">
-    // Question: What does this code do?
     $("#add-btn").on("click", function(event) {
       event.preventDefault();
       var newCharacter = {
@@ -73,7 +71,6 @@
         forcePoints: $("#force-points").val().trim()
       };
 
-      // Question: What does this code do??
       $.post("/api/characters", newCharacter)
         .then(function(data) {
           console.log("add.html", data);
