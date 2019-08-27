@@ -78,7 +78,6 @@ app.post("/api/characters", function(req, res) {
   var newcharacter = req.body;
 
   // Using a RegEx Pattern to remove spaces from newCharacter
-  // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
   newcharacter.routeName = newcharacter.name.replace(/\s+/g, "").toLowerCase();
 
   console.log(newcharacter);
